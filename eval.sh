@@ -1,0 +1,3 @@
+# python3 train_ssd.py --dataset_type open_images --datasets data/  --net mb3-ssd-lite --pretrained_ssd models/pt_model/mb3-ssd-lite-Epoch-149-Loss-5.782852862012213.pth --scheduler cosine --lr 0.001 --t_max 100 --validation_epochs 1 --num_epochs 200 --base_net_lr 0.001 --batch_size 5
+# python3 eval_ssd.py --dataset_type open_images --dataset data/   --net mb3-ssd-lite --trained_model /home/supernode/anno/MobileSSD/new_model_0212_cut_mos/best.pt --label_file /home/supernode/anno/MobileSSD/MobileNetV3-SSD/models/open-images-model-labels.txt
+python3 eval_ssd.py --dataset_type open_images --dataset  /home/supernode/Downloads/anno   --net mb3-ssd-lite --trained_model models/test0325/new_model_cls7_ori700/last.pt --label_file models/new_model/open-images-model-labels.txt
